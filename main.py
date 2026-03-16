@@ -44,11 +44,21 @@ kernels = {
         [1/5, -19/15, 1/5],
         [1/3, 1/5, 1/3]
     ]),
+    # Weird fuzzy effect, hard to describe, but it creates a unique texture.
+
     "High Contrasting": np.array([
         [-1, 1, -1],
         [-1, 8, -1],
         [-1, 1, -1]
+    ]),
+    # Makes it brighter and more contrasted.
+
+    "Cross": np.array([
+        [1, -1, 1],
+        [-1, 1, -1],
+        [1, -1, 1]
     ])
+    # Creates a cross pattern effect. Looks weird too.
 }
 
 for name, kernel in kernels.items():
